@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b1f3a;
+  color: white;
+}
+
+header {
+  background: #800020;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px white;
+}
+
+.logo {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  background: #142b52;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background: #800020;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* FORM */
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 260px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 8px white;
+}
+
+/* ANIMATIONS */
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 1s ease;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
